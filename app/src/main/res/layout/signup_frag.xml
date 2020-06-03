@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/back3"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+    <Space android:layout_width="match_parent"
+        android:id="@+id/topspace"
+        android:layout_height="10dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/topspace"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernamelay"
+            android:textColorHint="@color/orange">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:textColorHint="@color/orange"
+                android:textColor="#FFFFFF"
+                android:hint="Full Name"
+                android:id="@+id/username"
+                android:inputType="textPersonName"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Space android:layout_height="20dp"
+            android:layout_below="@id/usernamelay"
+            android:id="@+id/spacebelowuser"
+            android:layout_width="match_parent"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/spacebelowuser"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/orange"
+            android:id="@+id/passlay">
+            <com.google.android.material.textfield.TextInputEditText
+                android:textColor="#FFFFFF"
+                android:id="@+id/password"
+                android:textColorHint="@color/orange"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    <Space android:layout_height="20dp"
+        android:layout_below="@id/passlay"
+        android:id="@+id/spacebelowpass"
+        android:layout_width="match_parent"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacebelowpass"
+        android:id="@+id/conpasslay"
+        android:textColorHint="@color/orange"
+        android:layout_weight="0.3">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/passwordcon"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/orange"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <Space android:layout_height="20dp"
+            android:id="@+id/spacebelowconpass"
+            android:layout_below="@id/conpasslay"
+            android:layout_width="match_parent"/>
+        <FrameLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/framelay"
+            android:layout_below="@id/spacebelowconpass"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="Next"
+                android:id="@+id/loginbut"
+                android:background="@drawable/login_but_back"
+                android:textColor="@color/orange"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent">
+                <ProgressBar
+                    android:id="@+id/loginprog"
+                    android:visibility="invisible"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateTint="@color/orange"/>
+            </RelativeLayout>
+        </FrameLayout>
+        <Space android:layout_height="30dp"
+            android:layout_below="@id/framelay"
+            android:layout_width="match_parent"/>
+</RelativeLayout>

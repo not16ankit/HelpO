@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipe2"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@color/back3"
+    tools:showIn="@layout/app_bar_helpomap">
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/tobegone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+<com.wang.avi.AVLoadingIndicatorView
+    android:layout_height="60dp"
+    app:indicatorColor="@color/orange"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="60dp"
+    app:indicatorName="BallClipRotateMultipleIndicator"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"/>
+        <TextView
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Processing..."/>
+    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:visibility="invisible"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </FrameLayout>
+</FrameLayout>

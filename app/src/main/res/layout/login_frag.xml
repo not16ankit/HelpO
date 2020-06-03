@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@color/back3">
+    <Space android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:id="@+id/space22"/>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/usernamelay"
+    android:layout_below="@id/space22"
+    android:textColorHint="@color/orange">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:textColorHint="@color/orange"
+        android:textColor="#FFFFFF"
+        android:hint="Email/Phone"
+        android:id="@+id/username"
+        android:layout_height="match_parent"/>
+</com.google.android.material.textfield.TextInputLayout>
+    <Space android:layout_height="26dp"
+        android:layout_below="@id/usernamelay"
+        android:id="@+id/spaceuser"
+        android:layout_width="match_parent"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/orange"
+        android:id="@+id/passwordlay"
+        android:layout_below="@id/spaceuser">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Space android:layout_height="50dp"
+        android:id="@+id/spacepass"
+        android:layout_below="@id/passwordlay"
+        android:layout_width="match_parent"/>
+    <FrameLayout
+        android:layout_below="@id/spacepass"
+        android:id="@+id/buttonpen"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:text="GET ME IN"
+        android:id="@+id/loginbut"
+        android:background="@drawable/login_but_back"
+        android:textColor="@color/orange"
+        />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/loginprog"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/orange"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <Space android:layout_height="20dp"
+     android:layout_below="@id/buttonpen"
+        android:layout_width="match_parent"/>
+</RelativeLayout>

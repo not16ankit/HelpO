@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fullcover"
+    tools:context=".helpomap">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_helpomap" />
+    <FrameLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/fab"
+        android:visibility="invisible"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/floating_back"
+            android:background="#000000"
+            android:alpha="0.8"/>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floating"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        app:menu_animationDelayPerItem="55"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="@color/orange"
+        app:menu_colorPressed="@color/orange"
+        app:menu_colorRipple="@color/orange"
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/fab_add"
+        app:menu_labels_colorNormal="#333"
+        app:menu_labels_colorPressed="#444"
+        app:menu_labels_colorRipple="#66efecec"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_ellipsize="none"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_padding="8dp"
+        app:menu_labels_position="left"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_singleLine="false"
+        app:menu_labels_textColor="@color/yellow"
+        app:menu_labels_textSize="15sp"
+        app:menu_openDirection="up"
+        app:menu_shadowColor="#000000"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="4dp"
+        app:menu_showShadow="true">
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/refreshfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_shadowColor="#000000"
+            app:fab_showShadow="true"
+            app:fab_colorNormal="@color/orange"
+            app:rippleColor="@color/orange"
+            android:src="@android:drawable/ic_menu_rotate"
+            app:fab_label="Refresh"
+            android:tint="#FFFFFF"
+            app:fab_size="mini" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/locationfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_shadowColor="#000000"
+            android:tint="#FFFFFF"
+            app:fab_showShadow="true"
+            app:fab_colorNormal="@color/orange"
+            app:rippleColor="@color/orange"
+            android:src="@android:drawable/ic_menu_compass"
+            app:fab_label="My Location"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/askhelpfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_shadowColor="#000000"
+            android:tint="#FFFFFF"
+            app:fab_colorNormal="@color/orange"
+            app:rippleColor="@color/orange"
+            app:fab_showShadow="true"
+            android:src="@android:drawable/ic_menu_call"
+            app:fab_label="Ask Help"
+            app:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+    </FrameLayout>
+    <include layout="@layout/swiper"
+        android:id="@+id/bottom"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

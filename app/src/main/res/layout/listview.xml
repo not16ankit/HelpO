@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="90dp"
+    android:background="@drawable/main_back">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_back"
+    android:alpha="0.4"/>
+    <LinearLayout
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="90dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/helpdes"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginRight="15dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eye"
+        android:src="@android:drawable/ic_menu_view"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewcount"
+            android:layout_below="@id/eye"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+</FrameLayout>

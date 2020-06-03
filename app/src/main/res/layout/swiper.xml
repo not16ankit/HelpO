@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sheet_back"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Neighbor Name"
+    android:textColor="#FFFFFF"/>
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="2dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomname"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+        <Space android:layout_height="40dp"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance"
+            android:textColor="#FFFFFF"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomdistance"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        <Space android:layout_height="40dp"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#FFFFFF"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomdescription"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <Button android:layout_width="140dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/help_but"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/help_but_back"
+        android:text="Help Friend"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+</LinearLayout>

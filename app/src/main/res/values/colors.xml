@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5e17eb</color>
+    <color name="colorPrimaryDark">#5e17eb</color>
+    <color name="colorAccent">#5e17eb</color>
+    <color name="back">#292826</color>
+    <color name="yellow">#F9D342</color>
+    <color name="pink">#DF678C</color>
+    <color name="back3">#0F111A</color>
+    <color name="orange">#5e17eb</color>
+    <color name="purple">#5e17eb</color>
+    <color name="iconblue">#00c2cb</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
